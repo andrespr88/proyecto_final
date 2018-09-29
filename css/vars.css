@@ -1,0 +1,9 @@
+.boton {
+  border: 2px solid black;
+  color: #bc7012;
+  background: #424242;
+  box-shadow: -6px 5px 4px 0px #000000; }
+  .boton:hover {
+    filter: brightness(1.5); }
+
+/*# sourceMappingURL=vars.css.map */

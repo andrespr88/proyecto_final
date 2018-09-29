@@ -1,0 +1,797 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Great+Vibes|Righteous|Poiret+One|Boogaloo|Ceviche+One|Chicle|Kaushan+Script|Monoton|Norican|Oleo+Script|Rancho|Yatra+One");
+.boton, .menu_general a, .contacto_division .aceptar, .volver {
+  border: 2px solid black;
+  color: #bc7012;
+  background: #424242;
+  box-shadow: -6px 5px 4px 0px #000000; }
+  .boton:hover, .menu_general a:hover, .contacto_division .aceptar:hover, .volver:hover {
+    filter: brightness(1.5); }
+
+/*resets y estructura general*/
+@font-face {
+  font-family: hot_sweat;
+  src: url("../fuentes/HotSweat.ttf"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body, html {
+  font-family: 'Poiret One', cursive;
+  font-family: "Indie Flower";
+  font-family: "Great Vibes";
+  font-family: "Righteous";
+  font-family: "Poiret One";
+  font-family: "Boogaloo";
+  font-family: "Ceviche One";
+  font-family: "Chicle";
+  font-family: "Yatra One";
+  font-family: "Kaushan Script";
+  font-family: "Monoton";
+  font-family: "Norican";
+  font-family: "Oleo Script";
+  font-family: "Rancho"; }
+
+@keyframes gas {
+  100% {
+    bottom: 90%; } }
+@keyframes gradiente {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes reflejo {
+  0% {
+    background: radial-gradient(transparent 0%, #ffffffb8 0%, transparent 100%); }
+  1% {
+    background: radial-gradient(transparent 2%, #ffffffb8 3%, transparent 100%); }
+  2% {
+    background: radial-gradient(transparent 4%, #ffffffb8 6%, transparent 100%); }
+  3% {
+    background: radial-gradient(transparent 6%, #ffffffb8 9%, transparent 100%); }
+  4% {
+    background: radial-gradient(transparent 8%, #ffffffb8 12%, transparent 100%); }
+  5% {
+    background: radial-gradient(transparent 10%, #ffffffb8 15%, transparent 100%); }
+  6% {
+    background: radial-gradient(transparent 12%, #ffffffb8 18%, transparent 100%); }
+  7% {
+    background: radial-gradient(transparent 14%, #ffffffb8 21%, transparent 100%); }
+  8% {
+    background: radial-gradient(transparent 16%, #ffffffb8 24%, transparent 100%); }
+  9% {
+    background: radial-gradient(transparent 18%, #ffffffb8 27%, transparent 100%); }
+  10% {
+    background: radial-gradient(transparent 20%, #ffffffb8 30%, transparent 100%); }
+  11% {
+    background: radial-gradient(transparent 22%, #ffffffb8 33%, transparent 100%); }
+  12% {
+    background: radial-gradient(transparent 24%, #ffffffb8 36%, transparent 100%); }
+  13% {
+    background: radial-gradient(transparent 26%, #ffffffb8 39%, transparent 100%); }
+  14% {
+    background: radial-gradient(transparent 28%, #ffffffb8 42%, transparent 100%); }
+  15% {
+    background: radial-gradient(transparent 30%, #ffffffb8 45%, transparent 100%); }
+  16% {
+    background: radial-gradient(transparent 32%, #ffffffb8 48%, transparent 100%); }
+  17% {
+    background: radial-gradient(transparent 34%, #ffffffb8 51%, transparent 100%); }
+  18% {
+    background: radial-gradient(transparent 36%, #ffffffb8 54%, transparent 100%); }
+  19% {
+    background: radial-gradient(transparent 38%, #ffffffb8 57%, transparent 100%); }
+  20% {
+    background: radial-gradient(transparent 40%, #ffffffb8 60%, transparent 100%); }
+  21% {
+    background: radial-gradient(transparent 52.5%, #ffffffb8 63%, transparent 100%); }
+  22% {
+    background: radial-gradient(transparent 55%, #ffffffb8 66%, transparent 100%); }
+  23% {
+    background: radial-gradient(transparent 57.5%, #ffffffb8 69%, transparent 100%); }
+  24% {
+    background: radial-gradient(transparent 60%, #ffffffb8 72%, transparent 100%); }
+  25% {
+    background: radial-gradient(transparent 62.5%, #ffffffb8 75%, transparent 100%); }
+  26% {
+    background: radial-gradient(transparent 65%, #ffffffb8 78%, transparent 100%); }
+  27% {
+    background: radial-gradient(transparent 67.5%, #ffffffb8 81%, transparent 100%); }
+  28% {
+    background: radial-gradient(transparent 70%, #ffffffb8 84%, transparent 100%); }
+  29% {
+    background: radial-gradient(transparent 72.5%, #ffffffb8 87%, transparent 100%); }
+  30% {
+    background: radial-gradient(transparent 75%, #ffffffb8 90%, transparent 100%); }
+  31% {
+    background: radial-gradient(transparent 77.5%, #ffffffb8 93%, transparent 100%); }
+  32% {
+    background: radial-gradient(transparent 80%, #ffffffb8 96%, transparent 100%); }
+  33% {
+    background: radial-gradient(transparent 82.5%, #ffffffb8 99%, transparent 100%); }
+  34% {
+    background: radial-gradient(transparent 85%, #ffffffb8 102%, transparent 100%); }
+  100% {
+    background: transparent; } }
+@keyframes reflejo2 {
+  0% {
+    background: linear-gradient(45deg, transparent 0%, #ffffffaa 0%, transparent 0%); }
+  1% {
+    background: linear-gradient(45deg, transparent 2.5%, #ffffffaa 3%, transparent 3.4%); }
+  2% {
+    background: linear-gradient(45deg, transparent 5%, #ffffffaa 6%, transparent 6.8%); }
+  3% {
+    background: linear-gradient(45deg, transparent 7.5%, #ffffffaa 9%, transparent 10.2%); }
+  4% {
+    background: linear-gradient(45deg, transparent 10%, #ffffffaa 12%, transparent 13.6%); }
+  5% {
+    background: linear-gradient(45deg, transparent 12.5%, #ffffffaa 15%, transparent 17%); }
+  6% {
+    background: linear-gradient(45deg, transparent 15%, #ffffffaa 18%, transparent 20.4%); }
+  7% {
+    background: linear-gradient(45deg, transparent 17.5%, #ffffffaa 21%, transparent 23.8%); }
+  8% {
+    background: linear-gradient(45deg, transparent 20%, #ffffffaa 24%, transparent 27.2%); }
+  9% {
+    background: linear-gradient(45deg, transparent 22.5%, #ffffffaa 27%, transparent 30.6%); }
+  10% {
+    background: linear-gradient(45deg, transparent 25%, #ffffffaa 30%, transparent 34%); }
+  11% {
+    background: linear-gradient(45deg, transparent 27.5%, #ffffffaa 33%, transparent 37.4%); }
+  12% {
+    background: linear-gradient(45deg, transparent 30%, #ffffffaa 36%, transparent 40.8%); }
+  13% {
+    background: linear-gradient(45deg, transparent 32.5%, #ffffffaa 39%, transparent 44.2%); }
+  14% {
+    background: linear-gradient(45deg, transparent 35%, #ffffffaa 42%, transparent 47.6%); }
+  15% {
+    background: linear-gradient(45deg, transparent 37.5%, #ffffffaa 45%, transparent 51%); }
+  16% {
+    background: linear-gradient(45deg, transparent 40%, #ffffffaa 48%, transparent 54.4%); }
+  17% {
+    background: linear-gradient(45deg, transparent 42.5%, #ffffffaa 51%, transparent 57.8%); }
+  18% {
+    background: linear-gradient(45deg, transparent 45%, #ffffffaa 54%, transparent 61.2%); }
+  19% {
+    background: linear-gradient(45deg, transparent 47.5%, #ffffffaa 57%, transparent 64.6%); }
+  20% {
+    background: linear-gradient(45deg, transparent 50%, #ffffffaa 60%, transparent 68%); }
+  21% {
+    background: linear-gradient(45deg, transparent 52.5%, #ffffffaa 63%, transparent 71.4%); }
+  22% {
+    background: linear-gradient(45deg, transparent 55%, #ffffffaa 66%, transparent 74.8%); }
+  23% {
+    background: linear-gradient(45deg, transparent 57.5%, #ffffffaa 69%, transparent 78.2%); }
+  24% {
+    background: linear-gradient(45deg, transparent 60%, #ffffffaa 72%, transparent 81.6%); }
+  25% {
+    background: linear-gradient(45deg, transparent 62.5%, #ffffffaa 75%, transparent 85%); }
+  26% {
+    background: linear-gradient(45deg, transparent 65%, #ffffffaa 78%, transparent 88.4%); }
+  27% {
+    background: linear-gradient(45deg, transparent 67.5%, #ffffffaa 81%, transparent 91.8%); }
+  28% {
+    background: linear-gradient(45deg, transparent 70%, #ffffffaa 84%, transparent 95.2%); }
+  29% {
+    background: linear-gradient(45deg, transparent 72.5%, #ffffffaa 87%, transparent 98.6%); }
+  30% {
+    background: linear-gradient(45deg, transparent 75%, #ffffffaa 90%, transparent 102%); }
+  30% {
+    background: linear-gradient(45deg, transparent 75%, #ffffffaa 90%, transparent 100%); }
+  31% {
+    background: linear-gradient(45deg, transparent 77.5%, #ffffffaa 93%, transparent 100%); }
+  32% {
+    background: linear-gradient(45deg, transparent 80%, #ffffffaa 96%, transparent 100%); }
+  33% {
+    background: linear-gradient(45deg, transparent 82.5%, #ffffffaa 99%, transparent 100%); }
+  34% {
+    background: linear-gradient(45deg, transparent 85%, #ffffffaa 102%, transparent 100%); }
+  34% {
+    background: linear-gradient(45deg, transparent 85%, #ffffffaa 100%, transparent 100%); }
+  35% {
+    background: linear-gradient(45deg, transparent 87.5%, #ffffffaa 100%, transparent 100%); }
+  36% {
+    background: linear-gradient(45deg, transparent 90%, #ffffffaa 100%, transparent 100%); }
+  37% {
+    background: linear-gradient(45deg, transparent 92.5%, #ffffffaa 100%, transparent 100%); }
+  38% {
+    background: linear-gradient(45deg, transparent 95%, #ffffffaa 100%, transparent 100%); }
+  39% {
+    background: linear-gradient(45deg, transparent 97.5%, #ffffffaa 100%, transparent 100%); }
+  40% {
+    background: linear-gradient(45deg, transparent 100%, #ffffffaa 100%, transparent 100%); }
+  100% {
+    background: transparent; } }
+@keyframes vidrio {
+  0% {
+    background: linear-gradient(180deg, transparent 0%, #ffffffb8 0%, transparent 100%); }
+  1% {
+    background: linear-gradient(180deg, transparent 2%, #ffffffb8 0%, transparent 100%); }
+  2% {
+    background: linear-gradient(180deg, transparent 4%, #ffffffb8 0%, transparent 100%); }
+  3% {
+    background: linear-gradient(180deg, transparent 6%, #ffffffb8 0%, transparent 100%); }
+  4% {
+    background: linear-gradient(180deg, transparent 8%, #ffffffb8 0%, transparent 100%); }
+  5% {
+    background: linear-gradient(180deg, transparent 10%, #ffffffb8 0%, transparent 100%); }
+  6% {
+    background: linear-gradient(180deg, transparent 12%, #ffffffb8 0%, transparent 100%); }
+  7% {
+    background: linear-gradient(180deg, transparent 14%, #ffffffb8 0%, transparent 100%); }
+  8% {
+    background: linear-gradient(180deg, transparent 16%, #ffffffb8 0%, transparent 100%); }
+  9% {
+    background: linear-gradient(180deg, transparent 18%, #ffffffb8 0%, transparent 100%); }
+  10% {
+    background: linear-gradient(180deg, transparent 20%, #ffffffb8 0%, transparent 100%); }
+  11% {
+    background: linear-gradient(180deg, transparent 22%, #ffffffb8 0%, transparent 100%); }
+  50% {
+    background: linear-gradient(180deg, transparent 22%, #ffffffb8 0%, transparent 100%); }
+  51% {
+    background: linear-gradient(180deg, transparent 23.95%, #ffffffb8 0%, transparent 100%); }
+  52% {
+    background: linear-gradient(180deg, transparent 25.9%, #ffffffb8 0%, transparent 100%); }
+  53% {
+    background: linear-gradient(180deg, transparent 27.85%, #ffffffb8 0%, transparent 100%); }
+  54% {
+    background: linear-gradient(180deg, transparent 29.8%, #ffffffb8 0%, transparent 100%); }
+  55% {
+    background: linear-gradient(180deg, transparent 31.75%, #ffffffb8 0%, transparent 100%); }
+  56% {
+    background: linear-gradient(180deg, transparent 33.7%, #ffffffb8 0%, transparent 100%); }
+  57% {
+    background: linear-gradient(180deg, transparent 35.65%, #ffffffb8 0%, transparent 100%); }
+  58% {
+    background: linear-gradient(180deg, transparent 37.6%, #ffffffb8 0%, transparent 100%); }
+  59% {
+    background: linear-gradient(180deg, transparent 39.55%, #ffffffb8 0%, transparent 100%); }
+  60% {
+    background: linear-gradient(180deg, transparent 41.5%, #ffffffb8 0%, transparent 100%); }
+  61% {
+    background: linear-gradient(180deg, transparent 43.45%, #ffffffb8 0%, transparent 100%); }
+  62% {
+    background: linear-gradient(180deg, transparent 45.4%, #ffffffb8 0%, transparent 100%); }
+  63% {
+    background: linear-gradient(180deg, transparent 47.35%, #ffffffb8 0%, transparent 100%); }
+  64% {
+    background: linear-gradient(180deg, transparent 49.3%, #ffffffb8 0%, transparent 100%); }
+  65% {
+    background: linear-gradient(180deg, transparent 51.25%, #ffffffb8 0%, transparent 100%); }
+  66% {
+    background: linear-gradient(180deg, transparent 53.2%, #ffffffb8 0%, transparent 100%); }
+  67% {
+    background: linear-gradient(180deg, transparent 55.15%, #ffffffb8 0%, transparent 100%); }
+  68% {
+    background: linear-gradient(180deg, transparent 57.1%, #ffffffb8 0%, transparent 100%); }
+  69% {
+    background: linear-gradient(180deg, transparent 59.05%, #ffffffb8 0%, transparent 100%); }
+  70% {
+    background: linear-gradient(180deg, transparent 61%, #ffffffb8 0%, transparent 100%); }
+  71% {
+    background: linear-gradient(180deg, transparent 62.95%, #ffffffb8 0%, transparent 100%); }
+  72% {
+    background: linear-gradient(180deg, transparent 64.9%, #ffffffb8 0%, transparent 100%); }
+  73% {
+    background: linear-gradient(180deg, transparent 66.85%, #ffffffb8 0%, transparent 100%); }
+  74% {
+    background: linear-gradient(180deg, transparent 68.8%, #ffffffb8 0%, transparent 100%); }
+  75% {
+    background: linear-gradient(180deg, transparent 70.75%, #ffffffb8 0%, transparent 100%); }
+  76% {
+    background: linear-gradient(180deg, transparent 72.7%, #ffffffb8 0%, transparent 100%); }
+  77% {
+    background: linear-gradient(180deg, transparent 74.65%, #ffffffb8 0%, transparent 100%); }
+  78% {
+    background: linear-gradient(180deg, transparent 76.6%, #ffffffb8 0%, transparent 100%); }
+  79% {
+    background: linear-gradient(180deg, transparent 78.55%, #ffffffb8 0%, transparent 100%); }
+  80% {
+    background: linear-gradient(180deg, transparent 80.5%, #ffffffb8 0%, transparent 100%); }
+  81% {
+    background: linear-gradient(180deg, transparent 82.45%, #ffffffb8 0%, transparent 100%); }
+  82% {
+    background: linear-gradient(180deg, transparent 84.4%, #ffffffb8 0%, transparent 100%); }
+  83% {
+    background: linear-gradient(180deg, transparent 86.35%, #ffffffb8 0%, transparent 100%); }
+  84% {
+    background: linear-gradient(180deg, transparent 88.3%, #ffffffb8 0%, transparent 100%); }
+  85% {
+    background: linear-gradient(180deg, transparent 90.25%, #ffffffb8 0%, transparent 100%); }
+  86% {
+    background: linear-gradient(180deg, transparent 92.2%, #ffffffb8 0%, transparent 100%); }
+  87% {
+    background: linear-gradient(180deg, transparent 94.15%, #ffffffb8 0%, transparent 100%); }
+  88% {
+    background: linear-gradient(180deg, transparent 96.1%, #ffffffb8 0%, transparent 100%); }
+  89% {
+    background: linear-gradient(180deg, transparent 98.05%, #ffffffb8 0%, transparent 100%); }
+  90% {
+    background: linear-gradient(180deg, transparent 100%, #ffffffb8 0%, transparent 100%); }
+  100% {
+    background: transparent; } }
+@keyframes vidrio2 {
+  0% {
+    background: linear-gradient(90deg, transparent 0%, #ffffffb8 0%, transparent 100%); }
+  1% {
+    background: linear-gradient(90deg, transparent 2%, #ffffffb8 0%, transparent 100%); }
+  2% {
+    background: linear-gradient(90deg, transparent 4%, #ffffffb8 0%, transparent 100%); }
+  3% {
+    background: linear-gradient(90deg, transparent 6%, #ffffffb8 0%, transparent 100%); }
+  4% {
+    background: linear-gradient(90deg, transparent 8%, #ffffffb8 0%, transparent 100%); }
+  5% {
+    background: linear-gradient(90deg, transparent 10%, #ffffffb8 0%, transparent 100%); }
+  6% {
+    background: linear-gradient(90deg, transparent 12%, #ffffffb8 0%, transparent 100%); }
+  7% {
+    background: linear-gradient(90deg, transparent 14%, #ffffffb8 0%, transparent 100%); }
+  8% {
+    background: linear-gradient(90deg, transparent 16%, #ffffffb8 0%, transparent 100%); }
+  9% {
+    background: linear-gradient(90deg, transparent 18%, #ffffffb8 0%, transparent 100%); }
+  10% {
+    background: linear-gradient(90deg, transparent 20%, #ffffffb8 0%, transparent 100%); }
+  11% {
+    background: linear-gradient(90deg, transparent 22%, #ffffffb8 0%, transparent 100%); }
+  12% {
+    background: linear-gradient(90deg, transparent 24%, #ffffffb8 0%, transparent 100%); }
+  13% {
+    background: linear-gradient(90deg, transparent 26%, #ffffffb8 0%, transparent 100%); }
+  14% {
+    background: linear-gradient(90deg, transparent 28%, #ffffffb8 0%, transparent 100%); }
+  15% {
+    background: linear-gradient(90deg, transparent 30%, #ffffffb8 0%, transparent 100%); }
+  16% {
+    background: linear-gradient(90deg, transparent 32%, #ffffffb8 0%, transparent 100%); }
+  17% {
+    background: linear-gradient(90deg, transparent 34%, #ffffffb8 0%, transparent 100%); }
+  18% {
+    background: linear-gradient(90deg, transparent 36%, #ffffffb8 0%, transparent 100%); }
+  19% {
+    background: linear-gradient(90deg, transparent 38%, #ffffffb8 0%, transparent 100%); }
+  20% {
+    background: linear-gradient(90deg, transparent 40%, #ffffffb8 0%, transparent 100%); }
+  21% {
+    background: linear-gradient(90deg, transparent 42%, #ffffffb8 0%, transparent 100%); }
+  22% {
+    background: linear-gradient(90deg, transparent 44%, #ffffffb8 0%, transparent 100%); }
+  23% {
+    background: linear-gradient(90deg, transparent 46%, #ffffffb8 0%, transparent 100%); }
+  24% {
+    background: linear-gradient(90deg, transparent 48%, #ffffffb8 0%, transparent 100%); }
+  25% {
+    background: linear-gradient(90deg, transparent 50%, #ffffffb8 0%, transparent 100%); }
+  26% {
+    background: linear-gradient(90deg, transparent 52%, #ffffffb8 0%, transparent 100%); }
+  27% {
+    background: linear-gradient(90deg, transparent 54%, #ffffffb8 0%, transparent 100%); }
+  28% {
+    background: linear-gradient(90deg, transparent 56%, #ffffffb8 0%, transparent 100%); }
+  29% {
+    background: linear-gradient(90deg, transparent 58%, #ffffffb8 0%, transparent 100%); }
+  30% {
+    background: linear-gradient(90deg, transparent 60%, #ffffffb8 0%, transparent 100%); }
+  31% {
+    background: linear-gradient(90deg, transparent 62%, #ffffffb8 0%, transparent 100%); }
+  32% {
+    background: linear-gradient(90deg, transparent 64%, #ffffffb8 0%, transparent 100%); }
+  33% {
+    background: linear-gradient(90deg, transparent 66%, #ffffffb8 0%, transparent 100%); }
+  34% {
+    background: linear-gradient(90deg, transparent 68%, #ffffffb8 0%, transparent 100%); }
+  35% {
+    background: linear-gradient(90deg, transparent 70%, #ffffffb8 0%, transparent 100%); }
+  36% {
+    background: linear-gradient(90deg, transparent 72%, #ffffffb8 0%, transparent 100%); }
+  37% {
+    background: linear-gradient(90deg, transparent 74%, #ffffffb8 0%, transparent 100%); }
+  38% {
+    background: linear-gradient(90deg, transparent 76%, #ffffffb8 0%, transparent 100%); }
+  39% {
+    background: linear-gradient(90deg, transparent 78%, #ffffffb8 0%, transparent 100%); }
+  40% {
+    background: linear-gradient(90deg, transparent 80%, #ffffffb8 0%, transparent 100%); }
+  41% {
+    background: linear-gradient(90deg, transparent 82%, #ffffffb8 0%, transparent 100%); }
+  42% {
+    background: linear-gradient(90deg, transparent 84%, #ffffffb8 0%, transparent 100%); }
+  43% {
+    background: linear-gradient(90deg, transparent 86%, #ffffffb8 0%, transparent 100%); }
+  44% {
+    background: linear-gradient(90deg, transparent 88%, #ffffffb8 0%, transparent 100%); }
+  45% {
+    background: linear-gradient(90deg, transparent 90%, #ffffffb8 0%, transparent 100%); }
+  46% {
+    background: linear-gradient(90deg, transparent 92%, #ffffffb8 0%, transparent 100%); }
+  47% {
+    background: linear-gradient(90deg, transparent 94%, #ffffffb8 0%, transparent 100%); }
+  48% {
+    background: linear-gradient(90deg, transparent 96%, #ffffffb8 0%, transparent 100%); }
+  49% {
+    background: linear-gradient(90deg, transparent 98%, #ffffffb8 0%, transparent 100%); }
+  50% {
+    background: linear-gradient(90deg, transparent 100%, #ffffffb8 0%, transparent 100%); }
+  100% {
+    background: transparent; } }
+@keyframes goteo {
+  0% {
+    height: 0; }
+  100% {
+    height: 180px; } }
+.header {
+  padding: 0 10px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #bc7012 20%, #efd002);
+  border: 5px black;
+  border-style: solid none; }
+  .header .header_titulo {
+    font-family: "hot_sweat";
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: normal; }
+
+.cont_espuma {
+  position: absolute;
+  top: 0; }
+  .cont_espuma::after {
+    content: "";
+    width: 20px;
+    position: absolute;
+    right: -5px;
+    background: white;
+    border-radius: 0 0 40% 60%;
+    animation: goteo 10s infinite; }
+  .cont_espuma .espuma {
+    height: 30px;
+    width: 35px;
+    position: relative;
+    margin-left: -10px;
+    left: 10px;
+    top: -2px;
+    float: left;
+    background: white;
+    border-radius: 50%; }
+    .cont_espuma .espuma:nth-child(even) {
+      top: -5px; }
+
+.burbuja {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  background: radial-gradient(transparent 0%, #ffffff66 60%, transparent 100%);
+  background: #ffffff66;
+  /* border: 1px solid #e4e3e37a; */
+  animation: gas ease-in-out infinite;
+  z-index: 2; }
+  .burbuja:nth-child(1) {
+    left: 73%;
+    animation-duration: 2s;
+    animation-delay: 0.6s; }
+  .burbuja:nth-child(2) {
+    left: 33%;
+    animation-duration: 9s;
+    animation-delay: 1s; }
+  .burbuja:nth-child(3) {
+    left: 80%;
+    animation-duration: 5.5s;
+    animation-delay: 0.6s; }
+  .burbuja:nth-child(4) {
+    left: 31%;
+    animation-duration: 8s;
+    animation-delay: 0.4s; }
+  .burbuja:nth-child(5) {
+    left: 51%;
+    animation-duration: 8.5s;
+    animation-delay: 0.2s; }
+  .burbuja:nth-child(6) {
+    left: 74%;
+    animation-duration: 2.5s;
+    animation-delay: 0.4s; }
+  .burbuja:nth-child(7) {
+    left: 43%;
+    animation-duration: 6s;
+    animation-delay: 0.6s; }
+  .burbuja:nth-child(8) {
+    left: 28%;
+    animation-duration: 4s;
+    animation-delay: 0.6s; }
+  .burbuja:nth-child(9) {
+    left: 23%;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s; }
+  .burbuja:nth-child(10) {
+    left: 87%;
+    animation-duration: 2s;
+    animation-delay: 0.2s; }
+  .burbuja:nth-child(11) {
+    left: 51%;
+    animation-duration: 2s;
+    animation-delay: 0.2s; }
+  .burbuja:nth-child(12) {
+    left: 74%;
+    animation-duration: 5s;
+    animation-delay: 0.2s; }
+
+.logo {
+  height: 150px; }
+
+.menu_general {
+  display: flex;
+  flex-direction: column; }
+  .menu_general a {
+    padding: 0.2em 0.5em;
+    border-radius: 15px; }
+
+.menu_hamburguesa {
+  padding: 10px;
+  position: relative;
+  font-size: 2rem; }
+  .menu_hamburguesa::before {
+    content: "";
+    height: 0;
+    width: 10px;
+    margin-left: -10px;
+    position: absolute;
+    top: 30px;
+    background: linear-gradient(to bottom, #bc7012 20%, #efd002);
+    transition: 1s; }
+  .menu_hamburguesa a {
+    padding: 2px;
+    color: black;
+    border: 1px solid black;
+    z-index: 2; }
+  .menu_hamburguesa:hover .hamburguesa {
+    transform: rotate(-45deg); }
+  .menu_hamburguesa:hover::before {
+    height: 120px; }
+  .menu_hamburguesa:hover .menu_oculto {
+    height: auto;
+    overflow: visible; }
+    .menu_hamburguesa:hover .menu_oculto::after {
+      height: 95%;
+      border-top: 20px solid #ffffffc2; }
+
+.hamburguesa {
+  padding: 3px;
+  position: relative;
+  border: 3px solid #fffefe82;
+  border-top: 15px solid #ffffffc7;
+  border-radius: 5px;
+  transition: 1s; }
+  .hamburguesa::after {
+    content: '';
+    width: 0.3em;
+    height: 0.8em;
+    position: absolute;
+    right: -15px;
+    top: 0px;
+    border: 3px solid #fffefe82;
+    border-radius: 5px; }
+
+.menu_oculto {
+  height: 0;
+  margin-top: 15px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem; }
+  .menu_oculto::after {
+    content: "";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, #bc7012 20%, #efd002);
+    border-radius: 5px 5px 0 0;
+    transition: 1.5s 0.5s; }
+
+/*--------------------------------------------------------------------------*/
+/*Termina el Header*/
+#historia {
+  padding: 1em;
+  background: repeating-linear-gradient(40deg, #775a30 30%, #bb994c 61%), repeating-linear-gradient(300deg, #775a30 20%, #bb994c 50%), repeating-linear-gradient(15deg, #775a30 20%, #bb994c 60%);
+  /* background: repeating-linear-gradient(0deg, #9e9e9e 30%, #ffffff30 61%), repeating-linear-gradient(300deg, #ffffff 20%, #9e9e9e42 50%), repeating-linear-gradient(15deg, #fff0 20%, #9e9e9e 60%), repeating-linear-gradient(250deg, #fff0 50%, #9e9e9e 90%); */
+  /* background: repeating-linear-gradient(transparent 30%, #8A6F4E 60%), linear-gradient(45deg, #C8AC82 50%, #8A6F4E 60%); */
+  /* filter: sepia(40%); */
+  background: url(http://www.youthedesigner.com/wp-content/uploads/2010/08/3-schamka.jpg) 50% 50%;
+  background-size: cover;
+  overflow: auto; }
+  #historia img {
+    margin: 1em;
+    width: 600px;
+    float: left; }
+  #historia .texto {
+    margin: 1em;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: justify; }
+    #historia .texto::first-letter {
+      font-size: 4rem; }
+
+.titulo {
+  margin: 1em;
+  font-family: "hot_sweat";
+  font-size: 2rem;
+  font-weight: normal;
+  border-bottom: 2px dotted;
+  text-align: center; }
+
+/*Empieza Cervezas*/
+/*--------------------------------------------------------------------------*/
+#cervezas {
+  padding: 1em;
+  background: repeating-radial-gradient(circle, #9E9E9E 8%, #1f1f1f 9%, #9E9E9E 10%); }
+  #cervezas .contenedor_cervezas {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    grid-gap: 2em; }
+
+.item {
+  padding: 2em;
+  max-width: 300px;
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  background: linear-gradient(to bottom, #bc7012 20%, #efd002);
+  border-radius: 50%;
+  box-shadow: inset 5px 5px 5px 0px black;
+  filter: drop-shadow(10px 10px 5px black);
+  transition: 1.5s; }
+  .item:nth-child(odd) {
+    background: linear-gradient(to bottom, #71130d 30%, #ae250b);
+    box-shadow: 5px 5px 5px 0px black; }
+    .item:nth-child(odd)::after {
+      animation: reflejo 2s infinite alternate; }
+  .item:nth-child(4)::after {
+    animation: 5s vidrio infinite alternate; }
+  .item:nth-child(6)::after {
+    animation: 5s vidrio2 infinite alternate; }
+  .item:nth-child(1)::after, .item:nth-child(5)::after {
+    animation: 3s reflejo2 infinite alternate; }
+  .item h4 {
+    padding-bottom: 0.5em;
+    color: #fff;
+    text-align: center; }
+  .item::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(transparent 40%, #ffffffb8 60%, #ffffff17 100%);
+    border-radius: 50%; }
+  .item p {
+    display: none; }
+  .item .foto_cervezas {
+    height: 150px;
+    display: block; }
+  .item:hover {
+    transform: rotateY(360deg);
+    border-radius: 10px; }
+    .item:hover:nth-child(odd) {
+      transform: rotate(360deg); }
+    .item:hover::after {
+      display: none; }
+    .item:hover p {
+      display: block; }
+    .item:hover .foto_cervezas {
+      display: none; }
+
+#contacto {
+  padding: 2em 1em;
+  overflow: auto;
+  background: linear-gradient(to bottom, #bc7012 20%, #efd002);
+  background: linear-gradient(90deg, #311B92, #00BCD4, #311B92); }
+
+.contacto_division {
+  margin: 2em 0;
+  padding: 1em;
+  height: 350px;
+  width: 49%;
+  position: relative;
+  float: left;
+  background: linear-gradient(90deg, #311B92, #00BCD4, #311B92);
+  background: linear-gradient(to bottom, #bc7012 20%, #efd002);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 15px; }
+  .contacto_division:nth-child(2) {
+    margin-right: 2%; }
+  .contacto_division iframe {
+    width: 100%;
+    height: -webkit-fill-available; }
+  .contacto_division div {
+    margin: 1em 0;
+    display: flex;
+    align-items: center; }
+    .contacto_division div span {
+      margin-right: 0.5em; }
+    .contacto_division div .input {
+      padding: 0.5em;
+      width: 48%;
+      flex: 1;
+      border: #311B92 2px;
+      border-style: none none solid solid;
+      border-radius: 15px; }
+      .contacto_division div .input:focus {
+        font-size: 1.2rem;
+        outline: none;
+        border: 2px solid #311B92; }
+      .contacto_division div .input:nth-child(2) {
+        margin-left: 4%; }
+  .contacto_division .aceptar {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 0.2em 0.5em;
+    border-radius: 15px; }
+
+.negrita {
+  font-weight: bold; }
+
+.footer {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bc7012;
+  background: repeating-linear-gradient(45deg, #000000 8%, #1f1f1f 9%, #000000 10%); }
+  .footer .contenedor_redes div {
+    float: right;
+    text-align: right; }
+  .footer .contenedor_redes .redes {
+    width: 70px; }
+    .footer .contenedor_redes .redes:hover {
+      width: 75px;
+      filter: drop-shadow(5px 5px 10px #bc7012) brightness(1.2); }
+
+.borde_inferior {
+  border-bottom: 5px solid black; }
+
+.volver {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  font-size: 2rem;
+  padding: 0.1em 0.1em;
+  border-radius: 50%; }
+
+.hidden_desktop {
+  display: none; }
+
+@media screen and (max-width: 800px) {
+  .hidden_desktop {
+    display: block; }
+
+  .hidden_tablet {
+    display: none; }
+
+  #cervezas .contenedor_cervezas {
+    grid-template-columns: repeat(2, auto); }
+
+  .contacto_division {
+    width: 100%; } }
+@media screen and (max-width: 550px) {
+  #cervezas .contenedor_cervezas {
+    grid-template-columns: repeat(1, auto); } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,435 @@
+@import "vars.scss";
+@import "main.scss";
+@import "animations.scss";
+
+.header {
+  padding: 0 10px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $gradiente;
+	border: 5px black;
+  border-style: solid none;
+	.header_titulo{
+	  font-family: "hot_sweat";
+	  font-size: 3rem;
+	  font-style: italic;
+	  font-weight: normal;
+	}
+}
+
+
+.cont_espuma{
+  position: absolute;
+  top: 0;
+	&::after{
+		content:"";
+	  width: 20px;
+	  position: absolute;
+	  right: -5px;
+	  background: white;
+	  border-radius: 0 0 40% 60%;
+	  animation: goteo 10s infinite;
+	}
+	.espuma{
+	  height: 30px;
+	  width: 35px;
+	  position: relative;
+	  margin-left: -10px;
+	  left: 10px;
+	  top: -2px;
+	  float: left;
+	  background: white;
+	  border-radius: 50%;
+		&:nth-child(even){
+		  top:-5px;
+		}
+	}
+}
+
+.burbuja{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  background: radial-gradient(transparent 0%, #ffffff66 60%, transparent 100%);
+  background: #ffffff66;
+  /* border: 1px solid #e4e3e37a; */
+  animation: gas ease-in-out infinite;
+  z-index: 2;
+  @for $i from 1 through 12{
+  	&:nth-child(#{$i}){
+  		left: random(70)+20%;
+  		animation-duration: #{random(9)+random(2)/2}s;
+  		animation-delay: #{random(5)/5}s;
+  	}
+  }
+}
+
+.logo{
+  height: 150px;
+}
+
+.menu_general{
+	display: flex;
+	flex-direction: column;
+	a{
+		@include botones(0.2em, 0.5em, 15px);
+	}
+}
+
+.menu_hamburguesa{
+  padding: 10px;
+  position: relative;
+  font-size: 2rem;
+	&::before{
+		content:"";
+	  height: 0;
+	  width: 10px;
+	  margin-left: -10px;
+	  position: absolute;
+	  top: 30px;
+	  background: $gradiente;
+	  transition: 1s;
+	}
+	a{
+	  padding: 2px;
+	  color: black;
+	  border: 1px solid black;
+	  z-index: 2;
+	}
+	&:hover{
+		.hamburguesa{
+		  transform: rotate(-45deg);
+		}
+		&::before{
+		  height: 120px;
+		}
+		.menu_oculto{
+    	height: auto;
+    	overflow: visible;
+			&::after{
+			  height: 95%;
+    		border-top: 20px solid #ffffffc2;
+			}
+		}
+	} 
+}
+
+.hamburguesa{
+  padding: 3px;
+  position: relative;
+  border: 3px solid #fffefe82;
+  border-top: 15px solid #ffffffc7;
+  border-radius: 5px;
+  transition: 1s;
+	&::after{
+    content: '';
+    width: 0.3em;
+    height: 0.8em;
+    position: absolute;
+    right: -15px;
+    top: 0px;
+    border: 3px solid #fffefe82;
+    border-radius: 5px;
+	}
+}
+
+
+
+.menu_oculto{
+  height: 0;
+  margin-top: 15px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+	&::after{
+		content:"";
+	  height: 0;
+	  width: 100%;
+	  position: absolute;
+	  bottom: 0;
+	  background: $gradiente;
+	  border-radius: 5px 5px 0 0;
+	  transition: 1.5s 0.5s;
+	}
+}
+
+/*--------------------------------------------------------------------------*/
+/*Termina el Header*/
+//Empieza Historia
+// --------------------------------------------------------------------------
+#historia{
+	padding: 1em;
+	background: repeating-linear-gradient(40deg, $m 30%, $mc 61%), repeating-linear-gradient(300deg, $m 20%, $mc 50%), repeating-linear-gradient(15deg, $m 20%, $mc 60%);
+  /* background: repeating-linear-gradient(0deg, #9e9e9e 30%, #ffffff30 61%), repeating-linear-gradient(300deg, #ffffff 20%, #9e9e9e42 50%), repeating-linear-gradient(15deg, #fff0 20%, #9e9e9e 60%), repeating-linear-gradient(250deg, #fff0 50%, #9e9e9e 90%); */
+  /* background: repeating-linear-gradient(transparent 30%, #8A6F4E 60%), linear-gradient(45deg, #C8AC82 50%, #8A6F4E 60%); */
+  /* filter: sepia(40%); */
+  background: url(http://www.youthedesigner.com/wp-content/uploads/2010/08/3-schamka.jpg) 50% 50%;
+  background-size: cover;
+	overflow: auto;
+	img{
+		margin: 1em;
+		width: 600px;
+		float: left; 
+	}
+  .texto{
+		margin: 1em;
+  	font-family: 'Great Vibes', cursive;
+  	font-size: 1.5rem;	
+		font-weight: bold;
+		text-align: justify;
+  	&::first-letter{
+			font-size: 4rem;
+		}
+  }
+}
+
+.titulo{
+	margin: 1em;
+	font-family: "hot_sweat";
+	font-size: 2rem;
+	font-weight: normal;
+ 	border-bottom: 2px dotted;
+ 	text-align: center;
+}
+// -------------------------------------------------------------------------
+//Termina Historia
+/*Empieza Cervezas*/
+/*--------------------------------------------------------------------------*/
+
+#cervezas{
+	padding: 1em;
+  background: repeating-radial-gradient(circle, #9E9E9E 8%, #1f1f1f 9%, #9E9E9E 10%);
+	.contenedor_cervezas{
+	  padding: 2em;
+	  display: grid;
+	  grid-template-columns: repeat(3, auto);
+	  justify-content: center;
+	  grid-gap: 2em;
+	}
+}
+
+.item{
+  padding: 2em;
+  max-width: 300px; 
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  background: $gradiente;
+  border-radius: 50%;
+  box-shadow: inset 5px 5px 5px 0px black;
+  filter: drop-shadow(10px 10px 5px black);
+  transition: 1.5s; 
+	&:nth-child(odd){
+		background: $gradiente2;
+    box-shadow: 5px 5px 5px 0px black;
+    &::after{
+    	animation: reflejo 2s infinite alternate;	
+    }
+	}
+	&:nth-child(4)::after{
+		animation: 5s vidrio infinite alternate;
+	} 
+	&:nth-child(6)::after{
+		animation: 5s vidrio2 infinite alternate;
+	}
+	&:nth-child(1)::after, &:nth-child(5)::after{
+		animation: 3s reflejo2 infinite alternate;
+	}
+	h4{
+		padding-bottom: 0.5em;
+		color: #fff;
+		text-align: center;
+	}
+	&::after{ 
+    content: '';
+    height: 100%;
+    width: 100%;    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(transparent 40%, unquote("#ffffffb8") 60%, unquote("#ffffff17") 100%);
+    border-radius: 50%;
+  }
+	p{
+	  display: none;
+	}
+
+	.foto_cervezas{
+	  height: 150px;
+	  display: block;
+	}
+
+	&:hover{
+	  transform: rotateY(360deg);
+	  border-radius: 10px;
+	  &:nth-child(odd){
+	  	transform: rotate(360deg);
+	  }
+	  &::after{
+	  	display: none;
+	  }
+		p{
+		  display: block;
+		}
+		.foto_cervezas{
+		  display: none;
+		}
+	}
+}
+
+// Fin de la seccion cervezas---------------------------------------------
+// Empieza Formulario-----------------------------------------------------
+#contacto{
+	padding: 2em 1em;
+	overflow: auto;
+	background: $gradiente;
+	background: linear-gradient(90deg, $azul, #00BCD4, $azul);
+	form {
+		// margin-right: 2%;
+	}
+}
+
+.contacto_division{
+	margin: 2em 0;
+  padding: 1em;
+  height: 350px;
+  width: 49%;
+	position: relative;
+  float: left;
+  background: linear-gradient(90deg, $azul, #00BCD4, $azul);
+  background: $gradiente;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 15px;
+// Si esto funcionara, deberia sacar el margin del form
+  &:nth-child(2) {  	
+  	margin-right: 2%;
+  }
+  iframe{
+  	width: 100%;
+  	height: -webkit-fill-available;
+  }
+	div{
+	  margin: 1em 0;
+		display: flex;
+		align-items: center;
+		span{
+			margin-right: 0.5em;
+		}
+		.input{
+	    padding: 0.5em;
+//El 48% es para cuando sean 2 input dentro del div, y al tener flex: 1 va a ocupar todo el contenedor por mas que haya 1 solo input
+	    width: 48%; 
+	    flex: 1;
+    	border: $azul 2px;
+    	border-style: none none solid solid;
+	    border-radius: 15px;
+			&:focus{
+				font-size: 1.2rem;
+				outline: none;
+				border: 2px solid $azul;
+			}
+//Cuando haya 2 input, quiero que haya una separacion de 4% entre ambos
+			&:nth-child(2){
+				margin-left: 4%;
+			}
+		}
+	}
+		.aceptar{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			@include botones(0.2em, 0.5em, 15px);
+		}
+}
+
+.negrita{
+	font-weight: bold;
+}
+
+// Fin Formulario-------------------------------------------------------
+// Empieza footer-------------------------------------------------------
+
+.footer{
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $dorado;
+	background: repeating-linear-gradient(45deg, #000000 8%, #1f1f1f 9%, #000000 10%);
+	.contenedor_redes{
+		div{
+			float: right;
+			text-align: right;
+		}
+		.redes{
+			width: 70px;
+			&:hover{
+	    	width: 75px;
+				filter: drop-shadow(5px 5px 10px $dorado) brightness(1.2);
+			}
+		}		
+	}
+}
+
+.borde_inferior{
+	border-bottom: 5px solid black;
+}
+
+.volver{
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	font-size: 2rem;
+	@include botones(0.1em, 0.1em, 50%);
+}
+
+
+// --------------------------------------------------------------------------
+// Para ocultar cuando la resolucion es mayor a 800px
+// --------------------------------------------------------------------------
+.hidden_desktop{
+	display: none;
+}
+
+// Fin del footer------------------------------------------------------------
+// Empieza media query-------------------------------------------------------
+
+
+@media screen and (max-width: 800px){
+	.hidden_desktop{
+		display: block;
+	}
+// Para ocultar cuando la resolucion es mayor a 800px
+	.hidden_tablet{
+		display: none;
+	}
+
+	#cervezas{ 
+		.contenedor_cervezas{
+	  grid-template-columns: repeat(2, auto);
+		}
+	}
+	.contacto_division{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 550px){
+	#cervezas{
+		.contenedor_cervezas{
+		  grid-template-columns: repeat(1, auto);
+		}
+	}
+}
+
+
+
+

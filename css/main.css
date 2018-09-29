@@ -1,0 +1,30 @@
+/*resets y estructura general*/
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Great+Vibes|Righteous|Poiret+One|Boogaloo|Ceviche+One|Chicle|Kaushan+Script|Monoton|Norican|Oleo+Script|Rancho|Yatra+One");
+@font-face {
+  font-family: hot_sweat;
+  src: url("../fuentes/HotSweat.ttf"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body, html {
+  font-family: 'Poiret One', cursive;
+  font-family: "Indie Flower";
+  font-family: "Great Vibes";
+  font-family: "Righteous";
+  font-family: "Poiret One";
+  font-family: "Boogaloo";
+  font-family: "Ceviche One";
+  font-family: "Chicle";
+  font-family: "Yatra One";
+  font-family: "Kaushan Script";
+  font-family: "Monoton";
+  font-family: "Norican";
+  font-family: "Oleo Script";
+  font-family: "Rancho"; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,105 @@
+@keyframes gas {
+  100%{
+  	bottom: 95%;
+  }
+}
+
+@keyframes gradiente {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+@keyframes reflejo{
+	@for $i from 0 through 20 {
+		#{$i}% {  
+			background: radial-gradient(transparent $i*2% , unquote("#ffffffb8") $i*3% , transparent 100%);
+		}
+	}
+	@for $i from 21 through 34 {
+		#{$i}% {  
+			background: radial-gradient(transparent $i*2.5% , unquote("#ffffffb8") $i*3% , transparent 100%);
+		}
+	}
+	100%{
+		background: transparent;
+	}	
+}
+
+@keyframes reflejo2{
+	@for $i from 0 through 30 {
+		#{$i}% {  
+			background: linear-gradient(45deg, transparent (2.5%)*($i) , unquote("#ffffffaa") (3%)*($i) , transparent (3.4%)*($i));
+		}
+	}
+	@for $i from 30 through 34 {
+		#{$i}% {  
+			background: linear-gradient(45deg, transparent (2.5%)*($i) , unquote("#ffffffaa") (3%)*($i) , transparent 100%);
+		}
+	}
+	@for $i from 34 through 40 {
+		#{$i}% {  
+			background: linear-gradient(45deg, transparent (2.5%)*($i) , unquote("#ffffffaa") 100% , transparent 100%);
+		}
+	}
+	100%{
+		background: transparent;
+	}
+}
+
+@keyframes reflejo3{
+	@for $i from 1 through 40 {
+		#{$i}% {  
+			background: radial-gradient(transparent (40%)/($i) , unquote("#ffffffaa") (60%)/($i) , transparent (100%)/($i));
+		}
+	}
+	100%{
+		background: transparent;
+	}
+}
+
+@keyframes vidrio{
+$x: 0;  
+	@for $i from 0 through 11 {
+		#{$i}% {  
+			background: linear-gradient(180deg, transparent $i*2%, #ffffffb8 0%, transparent 100%);
+		}
+	}
+	@for $i from 50 through 90 {
+		#{$i}% {
+			background: linear-gradient(180deg, transparent 22%+(78/40)*$x, #ffffffb8 0%, transparent 100%);
+		}
+		$x: $x+1;
+	}
+	100%{
+		background: transparent;
+	}
+}
+
+@keyframes vidrio2{  
+	@for $i from 0 through 50 {
+		#{$i}% {  
+			background: linear-gradient(90deg, transparent $i*2%, #ffffffb8 0%, transparent 100%);
+		}
+	}
+	100%{
+		background: transparent;
+	}
+}
+
+@keyframes goteo{
+	0%{
+		height: 0;
+	}
+	100%{
+		height: 150px;
+	}
+}
+
