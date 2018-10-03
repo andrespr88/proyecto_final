@@ -9,9 +9,10 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="contenedor_general">	
 	<header id="inicio" class="header">
-		<img src="img/logo3.png" class="logo">		
-		<div class="cont_espuma">			
+		<div class="contenedor_logo">			
+			<img src="img/logo3.png" class="logo">			
 			<div class="espuma"></div>
 			<div class="espuma"></div>
 			<div class="espuma"></div>
@@ -20,7 +21,7 @@
 			<div class="espuma"></div>
 		
 		</div>
-		<h1 class="header_titulo hidden_tablet">Valinor</h1>		  
+		<h1 class="header_titulo hidden_tablet">VALINOR</h1>		  
         <div class="burbuja"></div>
         <div class="burbuja"></div>
         <div class="burbuja"></div>
@@ -44,6 +45,7 @@
 			<div class="menu_oculto">
 		        <div class="burbuja"></div>
 		        <div class="burbuja"></div>
+		        <div class="burbuja"></div>
 		        <div class="burbuja"></div>		
 	       		<a href="#historia">Nosotros</a>
 	       		<a href="#cervezas">Cervezas</a>
@@ -57,7 +59,7 @@
 		<img src="img/instalaciones.jpg" alt="" class="historia_foto hidden_tablet">
 		<div class="texto">
 			<p>Valinor fue fundada en el otoño de 2015 en Buenos Aires. Presentamos nuestras cervezas en ferias gastronómicas y en eventos cerveceros desde principios de 2016. Actualmente distribuimos nuestros productos en los alrededores de Buenos Aires y Gran Buenos Aires. Contamos con puestos para ferias y Choperas de Cerveza para alquilar. Nuestro objetivo es ofrecer cerveza local de calidad, de a pequeños lotes, manteniendo altos niveles de calidad. Preparamos algunas cervezas clásicas y otras únicas; experimentando con ingredientes en cada oportunidad que tenemos.</p>
-			<p>Desde los comienzos, la misión fue elaborar una cerveza de alta calidad, con gran variedad para todos los paladares. Y de esta manera, poder satisfacer a los consumidores más exigentes y conocedores del mundo de las “Buenas Cervezas”.</p>
+			<p>Desde los comienzos, la misión fue elaborar una cerveza de alta calidad, con gran variedad para todos los paladares. Y, de esta manera, poder satisfacer a los consumidores más exigentes y conocedores del mundo de las “Buenas Cervezas”.</p>
 			<p>La cerveza Valinor es un producto Premium que se destaca por una gran gama de sabores y estilos. Su calidad ha logrado que los comercios la quieran tener por ser un producto tradicional y exótico, debido a su origen y variedades, algunas de ellas muy particulares.</p>		
 			<p>La Fábrica cuenta con una de las instalaciones más modernas e innovadoras en cuanto a microcervecerías del país se refiere, sin por ello, perder la magia de la calidad artesanal. Cuidados procesos de higiene y control de calidad, garantizan a nuestros clientes, cervezas de alta gama elaboradas con materias primas cuidadosamente seleccionadas, tanto importadas como nacionales, las cuales conforman un producto final de inigualable calidad y presentación.</p>
 		</div>
@@ -124,23 +126,19 @@
 		<p><span class="negrita">Dirección:</span> Av. Gaona 3845, Ciudadela</p>
 		<p><span class="negrita">Teléfono:</span> (011) 4321-5678</p>
 		<p><span class="negrita">Email:</span> contacto@valinor.com</p>		
-		<form action="" class="contacto_division">
-		    <div class="burbuja"></div>
-		    <div class="burbuja"></div>
-		    <div class="burbuja"></div>
-		    <div class="burbuja"></div>
-		    <div class="burbuja"></div>
-		    <div class="burbuja"></div>		
+		<form action="" class="contacto_division">		
 			<div>
-				<input class="input" type="text" placeholder="*Nombre" required>
-				<input class="input" type="text" placeholder="*Apellido" required>
+				<input class="input" type="text" name="nombre" placeholder="Nombre:*" required>
+				<input class="input" type="text" name="apellido" placeholder="Apellido:*" required>
 			</div>
 			<div>
-				<input class="input" type="email" placeholder="*Email" required>
+				<input class="input" type="email" name="email" placeholder="Email:*" required>
 			</div>
-	        <div>
-		        
-		        <textarea class="input" name="" id="" cols="40" rows="8" placeholder="Mensaje:"></textarea>
+			<div>
+				<input class="input" type="tel" name="telefono" placeholder="Teléfono:" required>
+			</div>
+	        <div>		        
+		        <textarea class="input" name="comentario" id="" cols="40" rows="8" placeholder="Mensaje:"></textarea>
 	        </div>
 			<div>
       			<label for="mayor"><span>Soy mayor de 18 años</span></label>
@@ -171,7 +169,7 @@
 		</div>
 	</footer>
 	
-	<a href="#inicio" title="Volver al Inicio"><i class="far fa-arrow-alt-circle-up volver"></i></a>
-
+	<a href="#inicio" title="Volver a Inicio"><i class="far fa-arrow-alt-circle-up volver"></i></a>
+</div>
 </body>
 </html>

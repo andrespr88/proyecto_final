@@ -3,25 +3,28 @@ $amarillo: #efd002;
 $bordo: #71130d;
 $rojo: #ae250b;
 $azul: #311B92;
-$transparente: unquote("#ffffff17");
+$celeste: #00BCD4;
+$gris_claro: #c1c1c1;
+$gris_oscuro: #1f1f1f;
 $m: #775a30;
 $mc: #bb994c;
 $gradiente: linear-gradient(to bottom, $dorado 20%, $amarillo);
-$gradiente2: linear-gradient(to bottom, $bordo 30%, $rojo);
+$gradiente2: linear-gradient(135deg, $azul, $celeste, $azul);
+$gradiente3: linear-gradient(to bottom, $bordo 30%, $rojo);
 $gradiente_papel: repeating-linear-gradient(90deg, #BDBDBD 8%, #ffffff 9%, #BDBDBD 10%);
 
 .boton{
 	border: 2px solid black;
   color: $dorado;
-  background: #424242;
+  background: $gris_oscuro;
   box-shadow: -6px 5px 4px 0px #000000;
   &:hover{
   	filter: brightness(1.5);
   }
 }
 
-@mixin botones($padding_sup_inf,$padding_izq_der,$radius){
-	padding: $padding_sup_inf $padding_izq_der;
+@mixin botones($padding,$radius){
+	padding: $padding;
 	border-radius: $radius;
 	@extend.boton;
 }
