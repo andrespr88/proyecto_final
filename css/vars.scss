@@ -18,8 +18,10 @@ $gradiente_papel: repeating-linear-gradient(90deg, #BDBDBD 8%, #ffffff 9%, #BDBD
   color: $dorado;
   background: $gris_oscuro;
   box-shadow: -6px 5px 4px 0px #000000;
+  transition: 0.2s;
   &:hover{
   	filter: brightness(1.5);
+  	transform: scale(1.2)
   }
 }
 

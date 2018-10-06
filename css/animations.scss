@@ -20,12 +20,12 @@
 @keyframes reflejo{
 	@for $i from 0 through 20 {
 		#{$i}% {  
-			background: radial-gradient(transparent $i*2% , unquote("#ffffffb8") $i*3% , transparent 100%);
+			background: radial-gradient(transparent $i*2% , #ffffffb8 $i*3% , transparent 100%);
 		}
 	}
 	@for $i from 21 through 34 {
 		#{$i}% {  
-			background: radial-gradient(transparent $i*2.5% , unquote("#ffffffb8") $i*3% , transparent 100%);
+			background: radial-gradient(transparent $i*2.5% , #ffffffb8 $i*3% , transparent 100%);
 		}
 	}
 	100%{
@@ -36,17 +36,17 @@
 @keyframes reflejo2{
 	@for $i from 0 through 30 {
 		#{$i}% {  
-			background: linear-gradient(45deg, transparent (2.5%)*($i) , unquote("#ffffffaa") (3%)*($i) , transparent (3.4%)*($i));
+			background: linear-gradient(45deg, transparent (2.5%)*($i) , #ffffffaa (3%)*($i) , transparent (3.4%)*($i));
 		}
 	}
 	@for $i from 30 through 34 {
 		#{$i}% {  
-			background: linear-gradient(45deg, transparent (2.5%)*($i) , unquote("#ffffffaa") (3%)*($i) , transparent 100%);
+			background: linear-gradient(45deg, transparent (2.5%)*($i) , #ffffffaa (3%)*($i) , transparent 100%);
 		}
 	}
 	@for $i from 34 through 40 {
 		#{$i}% {  
-			background: linear-gradient(45deg, transparent (2.5%)*($i) , unquote("#ffffffaa") 100% , transparent 100%);
+			background: linear-gradient(45deg, transparent (2.5%)*($i) , #ffffffaa 100% , transparent 100%);
 		}
 	}
 	100%{
@@ -95,15 +95,17 @@ $x: 0;
 @keyframes llenar{
 	0%{
 		height: 0;
-		border-top: 0 solid white;
-	}
-	80%{
-		height: 90%;
-		border-top: 50px solid white;
 	}
 	100%{
-		height: 90%;
-		border-top: 50px solid white;	
+		height: 100%;	
 	}
 }
 
+@keyframes achicarse{
+	20%{
+		transform: scale(0.1) rotate(0deg);
+	}
+	100%{
+		transform: scale(1.1) rotate(360deg);
+	}
+}
