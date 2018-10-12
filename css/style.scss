@@ -24,7 +24,7 @@
     filter: drop-shadow(0px 0px 5px #000);
     background: #000;
     border-radius: 15px;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: $amarillo;
 	}
 }
@@ -229,8 +229,8 @@
 	  padding: 2em;
 	  display: grid;
 	  grid-template-columns: repeat(3, auto);
-	  justify-content: center;
 	  grid-gap: 2em;
+	  justify-content: center;
 	}
 	.titulo{
 	 	background: $gris_claro;
@@ -392,6 +392,23 @@
 		}
 }
 
+
+input[type=checkbox] {
+  display: none;
+	& + .check_beer{
+		height: 1.5em;
+		width: 1.5em;
+		border: 1px solid $gris_claro;
+		border-radius: 50%;
+	}
+	&:checked + .check_beer {
+		background: green url("../img/1.png");
+		background-size: cover;
+	}
+}
+
+
+
 .negrita{
 	font-weight: bold;
 }
@@ -451,6 +468,10 @@
 		display: none;
 	}
 
+	.header .header_titulo{
+		font-size: 3rem;
+	}
+
 	#cervezas{ 
 		.contenedor_cervezas{
 	  grid-template-columns: repeat(2, auto);
@@ -462,9 +483,14 @@
 }
 
 @media screen and (max-width: 550px){
-	#historia, #contacto{
-		padding: 1em;
+	.hidden_phone{
+		display: none;
 	}
+
+	#historia, #contacto{
+		padding: 2em 1em 4em;
+	}
+
 	#cervezas{
 		.contenedor_cervezas{
 		  grid-template-columns: repeat(1, auto);
@@ -492,7 +518,7 @@
 		justify-content: center;
     align-items: flex-end;
 		border-right: 5px solid #000;
-	  background: linear-gradient(90deg, #000, #fff, #000);
+	  background: linear-gradient(90deg, #000, $celeste, #000);
 		.header_titulo {
 	    display: none;
 		}
@@ -505,9 +531,9 @@
 			height: 100%;
 			position: absolute;
 			bottom: 0;
-			background: url(../img/botella-marron.png) 50% 100% repeat no-repeat;
+			background: url(../img/botella-marron.png) 50% 100% no-repeat;
 			background-size: contain;
-			animation: 5s llenar, 20s cambio_color infinite alternate;
+			animation: 5s crecer 2, 20s cambio_color infinite alternate;
 			z-index: -1;
 		}
 	}

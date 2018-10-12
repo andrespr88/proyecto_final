@@ -635,9 +635,10 @@ p + p {
     height: 0; }
   100% {
     height: 110%; } }
-@keyframes llenar {
+@keyframes crecer {
   0% {
-    height: 0; }
+    height: 0;
+    background-repeat: repeat; }
   100% {
     height: 100%; } }
 @keyframes achicarse {
@@ -649,7 +650,7 @@ p + p {
   0% {
     filter: hue-rotate(290deg); }
   100% {
-    filter: hue-rotate(400deg); } }
+    filter: hue-rotate(380deg); } }
 .boton, .menu_general a, .contacto_division .aceptar, .volver {
   border: 2px solid black;
   color: #bc7012;
@@ -679,7 +680,7 @@ p + p {
     filter: drop-shadow(0px 0px 5px #000);
     background: #000;
     border-radius: 15px;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #efd002; }
 
 .contenedor_logo {
@@ -716,52 +717,52 @@ p + p {
   background: #ffffff66;
   animation: gas ease-in-out infinite; }
   .burbuja:nth-last-of-type(n+1) {
-    left: 47%;
-    animation-duration: 3s;
-    animation-delay: 0.2s; }
-  .burbuja:nth-last-of-type(n+2) {
-    left: 44%;
-    animation-duration: 3s;
-    animation-delay: 0.4s; }
-  .burbuja:nth-last-of-type(n+3) {
-    left: 48%;
-    animation-duration: 3s;
-    animation-delay: 1s; }
-  .burbuja:nth-last-of-type(n+4) {
     left: 85%;
     animation-duration: 4s;
-    animation-delay: 0.6s; }
+    animation-delay: 0.4s; }
+  .burbuja:nth-last-of-type(n+2) {
+    left: 23%;
+    animation-duration: 7.5s;
+    animation-delay: 1s; }
+  .burbuja:nth-last-of-type(n+3) {
+    left: 86%;
+    animation-duration: 2s;
+    animation-delay: 0.8s; }
+  .burbuja:nth-last-of-type(n+4) {
+    left: 47%;
+    animation-duration: 7.5s;
+    animation-delay: 0.2s; }
   .burbuja:nth-last-of-type(n+5) {
-    left: 30%;
-    animation-duration: 4s;
-    animation-delay: 0.2s; }
+    left: 49%;
+    animation-duration: 6.5s;
+    animation-delay: 0.8s; }
   .burbuja:nth-last-of-type(n+6) {
-    left: 36%;
-    animation-duration: 5.5s;
-    animation-delay: 0.6s; }
+    left: 68%;
+    animation-duration: 3s;
+    animation-delay: 0.8s; }
   .burbuja:nth-last-of-type(n+7) {
-    left: 67%;
-    animation-duration: 4.5s;
-    animation-delay: 0.2s; }
+    left: 59%;
+    animation-duration: 5.5s;
+    animation-delay: 1s; }
   .burbuja:nth-last-of-type(n+8) {
-    left: 81%;
-    animation-duration: 8.5s;
+    left: 22%;
+    animation-duration: 5.5s;
     animation-delay: 0.4s; }
   .burbuja:nth-last-of-type(n+9) {
-    left: 62%;
-    animation-duration: 4.5s;
-    animation-delay: 0.8s; }
+    left: 77%;
+    animation-duration: 2.5s;
+    animation-delay: 1s; }
   .burbuja:nth-last-of-type(n+10) {
-    left: 55%;
-    animation-duration: 10s;
-    animation-delay: 0.8s; }
-  .burbuja:nth-last-of-type(n+11) {
-    left: 43%;
+    left: 37%;
     animation-duration: 8.5s;
     animation-delay: 0.2s; }
+  .burbuja:nth-last-of-type(n+11) {
+    left: 57%;
+    animation-duration: 2.5s;
+    animation-delay: 0.8s; }
   .burbuja:nth-last-of-type(n+12) {
-    left: 71%;
-    animation-duration: 9.5s;
+    left: 37%;
+    animation-duration: 8.5s;
     animation-delay: 0.2s; }
 
 .logo {
@@ -888,8 +889,8 @@ p + p {
     padding: 2em;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    grid-gap: 2em; }
+    grid-gap: 2em;
+    justify-content: center; }
   #cervezas .titulo {
     background: #c1c1c1; }
 
@@ -1012,6 +1013,17 @@ p + p {
     padding: 0.2em 0.5em;
     border-radius: 15px; }
 
+input[type=checkbox] {
+  display: none; }
+  input[type=checkbox] + .check_beer {
+    height: 1.5em;
+    width: 1.5em;
+    border: 1px solid #c1c1c1;
+    border-radius: 50%; }
+  input[type=checkbox]:checked + .check_beer {
+    background: green url("../img/1.png");
+    background-size: cover; }
+
 .negrita {
   font-weight: bold; }
 
@@ -1049,14 +1061,20 @@ p + p {
   .hidden_tablet {
     display: none; }
 
+  .header .header_titulo {
+    font-size: 3rem; }
+
   #cervezas .contenedor_cervezas {
     grid-template-columns: repeat(2, auto); }
 
   .contacto_division {
     width: 100%; } }
 @media screen and (max-width: 550px) {
+  .hidden_phone {
+    display: none; }
+
   #historia, #contacto {
-    padding: 1em; }
+    padding: 2em 1em 4em; }
 
   #cervezas .contenedor_cervezas {
     grid-template-columns: repeat(1, auto); } }
@@ -1075,7 +1093,7 @@ p + p {
     justify-content: center;
     align-items: flex-end;
     border-right: 5px solid #000;
-    background: linear-gradient(90deg, #000, #fff, #000); }
+    background: linear-gradient(90deg, #000, #00BCD4, #000); }
     .header .header_titulo {
       display: none; }
     .header .contenedor_logo {
@@ -1086,9 +1104,9 @@ p + p {
       height: 100%;
       position: absolute;
       bottom: 0;
-      background: url(../img/botella-marron.png) 50% 100% repeat no-repeat;
+      background: url(../img/botella-marron.png) 50% 100% no-repeat;
       background-size: contain;
-      animation: 5s llenar, 20s cambio_color infinite alternate;
+      animation: 5s crecer 2, 20s cambio_color infinite alternate;
       z-index: -1; }
 
   .menu_general a {
