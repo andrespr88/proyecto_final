@@ -681,7 +681,8 @@ p + p {
     background: #000;
     border-radius: 15px;
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #efd002; }
+    -webkit-text-stroke-color: #efd002;
+    transform: rotate(10deg); }
 
 .contenedor_logo {
   height: 150px;
@@ -717,52 +718,52 @@ p + p {
   background: #ffffff66;
   animation: gas ease-in-out infinite; }
   .burbuja:nth-last-of-type(n+1) {
-    left: 85%;
-    animation-duration: 4s;
+    left: 60%;
+    animation-duration: 10s;
     animation-delay: 0.4s; }
   .burbuja:nth-last-of-type(n+2) {
-    left: 23%;
-    animation-duration: 7.5s;
-    animation-delay: 1s; }
+    left: 22%;
+    animation-duration: 5s;
+    animation-delay: 0.2s; }
   .burbuja:nth-last-of-type(n+3) {
-    left: 86%;
-    animation-duration: 2s;
-    animation-delay: 0.8s; }
+    left: 88%;
+    animation-duration: 6s;
+    animation-delay: 0.4s; }
   .burbuja:nth-last-of-type(n+4) {
     left: 47%;
-    animation-duration: 7.5s;
-    animation-delay: 0.2s; }
-  .burbuja:nth-last-of-type(n+5) {
-    left: 49%;
-    animation-duration: 6.5s;
+    animation-duration: 5.5s;
     animation-delay: 0.8s; }
+  .burbuja:nth-last-of-type(n+5) {
+    left: 43%;
+    animation-duration: 8s;
+    animation-delay: 0.2s; }
   .burbuja:nth-last-of-type(n+6) {
-    left: 68%;
+    left: 38%;
+    animation-duration: 3s;
+    animation-delay: 0.6s; }
+  .burbuja:nth-last-of-type(n+7) {
+    left: 85%;
     animation-duration: 3s;
     animation-delay: 0.8s; }
-  .burbuja:nth-last-of-type(n+7) {
-    left: 59%;
-    animation-duration: 5.5s;
-    animation-delay: 1s; }
   .burbuja:nth-last-of-type(n+8) {
-    left: 22%;
-    animation-duration: 5.5s;
+    left: 26%;
+    animation-duration: 4.5s;
     animation-delay: 0.4s; }
   .burbuja:nth-last-of-type(n+9) {
-    left: 77%;
-    animation-duration: 2.5s;
-    animation-delay: 1s; }
+    left: 87%;
+    animation-duration: 5.5s;
+    animation-delay: 0.6s; }
   .burbuja:nth-last-of-type(n+10) {
     left: 37%;
-    animation-duration: 8.5s;
-    animation-delay: 0.2s; }
+    animation-duration: 4s;
+    animation-delay: 1s; }
   .burbuja:nth-last-of-type(n+11) {
-    left: 57%;
-    animation-duration: 2.5s;
+    left: 30%;
+    animation-duration: 9s;
     animation-delay: 0.8s; }
   .burbuja:nth-last-of-type(n+12) {
-    left: 37%;
-    animation-duration: 8.5s;
+    left: 89%;
+    animation-duration: 8s;
     animation-delay: 0.2s; }
 
 .logo {
@@ -775,7 +776,7 @@ p + p {
   .menu_general a {
     padding: 0.2em 0.5em;
     border-radius: 15px;
-    animation: 5s cambio_color infinite alternate; }
+    animation: 10s cambio_color infinite alternate; }
 
 .menu_hamburguesa {
   padding: 10px;
@@ -845,8 +846,6 @@ p + p {
     border-radius: 5px 5px 0 0;
     transition: 1.5s 0.5s; }
 
-/*--------------------------------------------------------------------------*/
-/*Termina el Header*/
 #historia {
   padding: 2em;
   background: url(../img/pergamino.jpg) 50% 50%;
@@ -880,8 +879,6 @@ p + p {
 .borde_inferior {
   border-bottom: 5px solid #000; }
 
-/*Empieza Cervezas*/
-/*--------------------------------------------------------------------------*/
 #cervezas {
   padding: 2em;
   background: repeating-radial-gradient(circle, #000 8%, #1f1f1f 9%, #000 10%); }
@@ -965,7 +962,7 @@ p + p {
 .contacto_division {
   margin: 2em 0 0 0;
   padding: 1em;
-  height: 410px;
+  height: 450px;
   width: 49%;
   position: relative;
   float: left;
@@ -974,7 +971,7 @@ p + p {
   border-radius: 15px; }
   .contacto_division iframe {
     width: 100%;
-    height: -webkit-fill-available; }
+    height: 100%; }
   .contacto_division div {
     margin: 1em 0;
     display: flex;
@@ -1012,6 +1009,10 @@ p + p {
     font-size: 1rem;
     padding: 0.2em 0.5em;
     border-radius: 15px; }
+
+.pos_bottom {
+  position: absolute;
+  bottom: 5px; }
 
 input[type=checkbox] {
   display: none; }
@@ -1093,7 +1094,7 @@ input[type=checkbox] {
     justify-content: center;
     align-items: flex-end;
     border-right: 5px solid #000;
-    background: linear-gradient(90deg, #000, #00BCD4, #000); }
+    background: linear-gradient(110deg, #bc7012, #efd002, #bc7012); }
     .header .header_titulo {
       display: none; }
     .header .contenedor_logo {
@@ -1106,7 +1107,8 @@ input[type=checkbox] {
       bottom: 0;
       background: url(../img/botella-marron.png) 50% 100% no-repeat;
       background-size: contain;
-      animation: 5s crecer 2, 20s cambio_color infinite alternate;
+      filter: hue-rotate(330deg) brightness(0.8);
+      animation: 5s crecer 3 alternate;
       z-index: -1; }
 
   .menu_general a {
