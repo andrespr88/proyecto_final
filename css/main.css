@@ -15,16 +15,17 @@ body, html {
   font-family: 'Poiret One', cursive;
   font-family: "Indie Flower";
   font-family: "Great Vibes";
-  font-family: "Righteous";
-  font-family: "Poiret One";
-  font-family: "Boogaloo";
-  font-family: "Ceviche One";
   font-family: "Chicle";
+  font-family: "Rancho";
+  font-family: "Boogaloo";
+  font-family: "Righteous";
+  font-family: "Yatra One"; }
+
+input, textarea {
   font-family: "Yatra One";
-  font-family: "Kaushan Script";
-  font-family: "Monoton";
-  font-family: "Norican";
-  font-family: "Oleo Script";
-  font-family: "Rancho"; }
+  font-family: "Righteous"; }
+
+p + p {
+  margin-top: 1em; }
 
 /*# sourceMappingURL=main.css.map */

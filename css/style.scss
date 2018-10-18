@@ -469,8 +469,8 @@
 		display: grid;
 		grid-template-columns: repeat(2, auto);
 		grid-template-areas:
-			"header carrousel"
 			"header historia"
+			"header carrousel"
 			"header cervezas"
 			"header contacto"
 			"header footer";
@@ -532,11 +532,6 @@
 	}
 	.volver{
 		display: none;
-	}
-	@media screen and (max-height: 560px){
-		.header .header_titulo{
-			display: none;
-		}
 	}
 }
 

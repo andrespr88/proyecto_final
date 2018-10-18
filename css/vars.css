@@ -1,9 +1,11 @@
 .boton {
   border: 2px solid black;
   color: #bc7012;
-  background: #424242;
-  box-shadow: -6px 5px 4px 0px #000000; }
+  background: #1f1f1f;
+  box-shadow: -6px 5px 4px 0px #000000;
+  transition: 0.2s; }
   .boton:hover {
-    filter: brightness(1.5); }
+    filter: brightness(1.5);
+    transform: scale(1.2); }
 
 /*# sourceMappingURL=vars.css.map */
