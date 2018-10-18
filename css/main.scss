@@ -1,10 +1,10 @@
 /*resets y estructura general*/
 
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Great+Vibes|Righteous|Poiret+One|Boogaloo|Ceviche+One|Chicle|Kaushan+Script|Monoton|Norican|Oleo+Script|Rancho|Yatra+One');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Righteous|Boogaloo|Yatra+One');
 
 @font-face {
-  font-family: hot_sweat;
-  src: url("../fuentes/HotSweat.ttf");
+  font-family: Lotr;
+  src: url("../fuentes/Lotr.ttf");
 }
 
 * {
@@ -18,18 +18,10 @@ a{
 }
 
 body, html{
-	font-family: 'Poiret One', cursive;
-	font-family: "Indie Flower"; 
-	font-family: "Great Vibes";
-	font-family: "Chicle"; 
-	font-family: "Rancho";
-	font-family: "Boogaloo";
-	font-family: "Righteous";
 	font-family: "Yatra One";
 } 
 
-input, textarea{
-	font-family: "Yatra One"; 
+input, textarea{ 
 	font-family: "Righteous";
 }
 

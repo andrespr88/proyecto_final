@@ -92,9 +92,10 @@ $x: 0;
 	}
 }
 
-@keyframes llenar{
+@keyframes crecer{
 	0%{
 		height: 0;
+		background-repeat: repeat;
 	}
 	100%{
 		height: 100%;	
@@ -107,5 +108,14 @@ $x: 0;
 	}
 	100%{
 		transform: scale(1.1) rotate(360deg);
+	}
+}
+
+@keyframes cambio_color{
+	0%{
+		filter: hue-rotate(290deg);
+	}
+	100%{
+		filter: hue-rotate(380deg);	
 	}
 }

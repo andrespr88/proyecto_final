@@ -1,0 +1,17 @@
+.boton{
+	border: 2px solid black;
+  color: $dorado;
+  background: $gris_oscuro;
+  box-shadow: -6px 5px 4px 0px #000000;
+  transition: 0.2s;
+  &:hover{
+  	filter: brightness(1.5);
+  	transform: scale(1.2)
+  }
+}
+
+@mixin botones($padding,$radius){
+	padding: $padding;
+	border-radius: $radius;
+	@extend.boton;
+}
